@@ -1,3 +1,25 @@
 .logo-portada {
-  width: 200px;
+  width: 400px;
+}
+
+.menulist {
+  text-decoration: underline;
+  align-self: flex-end;
+}
+
+.video {
+  width: 150px;
+}
+
+.line {
+  margin-left: 700px;
+  border-width: 2px;
+}
+.line2 {
+  margin-top: -12px;
+  margin-right: 750px;
+  border-width: 2px;
+}
+.logo-flutter {
+  width: 250px;
 }
