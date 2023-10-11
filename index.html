@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>TEXTITEC</title>
     <link
@@ -13,100 +14,63 @@
     />
   </head>
   <body>
-    <div>
-      <img src="imagenes/logo.jpg" alt="logo" class="logo-portada" />
-    </div>
-    <div>
-      <ul class="menulist">
-        <li>INICIO</li>
-        <li>EMPRESA</li>
-        <li>LÍNEAS</li>
-        <li>NOVEDADES</li>
-        <li>CONTACTO</li>
-      </ul>
-    </div>
-    <div>
-      <video src="videos/vid-carrusel.mp4" class="video" controls></video>
+    <header>
+      <div class="logo">
+        <a href="#"
+          ><img
+            src="imagenes/logo.jpg"
+            alt="logo de la compañia"
+            class="logo-portada"
+        /></a>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li><a href="#" class="nav-link">INICIO</a></li>
+          <li><a href="#" class="nav-link">EMPRESA</a></li>
+          <li><a href="#" class="nav-link">LÍNEAS</a></li>
+          <li><a href="#" class="nav-link">NOVEDADES</a></li>
+          <li><a href="#" class="nav-link">CONTACTO</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="video-wrapper">
+      <video autoplay muted loop class="video">
+        <source src="videos/vid-carrusel-2.mp4" type="video/mp4" />
+      </video>
     </div>
 
-    <div>
-      <img src="imagenes/img-1.jpg" alt="imagen1" />
-    </div>
-    <div>
-      <h3>NOSOTROS</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-        excepturi consequuntur quis repellat aliquam sed cupiditate eos ut
-        quidem quisquam, culpa commodi autem doloremque, quibusdam placeat, nisi
-        amet fugiat quae.
+    <div class="conten-nosotros">
+      <img src="imagenes/img-1.jpg" alt="imagen1" class="img-description" />
+      <h3 class="title-nos">NOSOTROS</h3>
+      <p class="content-nos">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+        temporibus aperiam numquam ipsa, ullam a doloremque aut quas ex quo
+        atque, sit assumenda porro nobis dolorum alias, quisquam tempore
+        reiciendis?
       </p>
     </div>
-
-    <hr class="line" />
-    <hr class="line2" />
-    <h3 class="line-center"><strong>LÍNEAS</strong></h3>
-
-    <div>
-      <img src="imagenes/img-line1.jpg" alt="foto-linea1" />
-      <h4>DENIM</h4>
-    </div>
-    <div>
-      <img src="imagenes/img-line2.jpg" alt="foto-linea1" />
-      <h4>MODA HOMBRE</h4>
-    </div>
-    <div>
-      <img src="imagenes/img-line3.jpg" alt="foto-linea1" />
-      <h4>INDUSTRIAL</h4>
-    </div>
-    <div>
-      <img src="imagenes/img-line4.jpg" alt="foto-linea1" />
-      <h4>MODA MUJER</h4>
-    </div>
-
-    <div>
-      <img src="imagenes/logo.jpg" alt="logo-flutter" class="logo-flutter" />
-    </div>
     <hr />
-
     <div>
-      <ul class="flutter-list">
-        <li>
-          <h3>Contactanos</h3>
-        </li>
-        <p>961005331</p>
-        <p>textitec@gmail.com</p>
-
-        <li>
-          <h3>Empresa</h3>
-        </li>
-        <p>Nosotros</p>
-        <p>Intranet</p>
-        <p>Estampacion</p>
-        <p>Mayoristas Colortex</p>
-        <p>Trabaja con Nosotros</p>
-
-        <li>
-          <h3>Líneas</h3>
-          <p>Moda Mujer</p>
-          <p>Moda Hombre</p>
-          <p>Sportech</p>
-          <p>Industrial</p>
-          <p>Institucional</p>
-        </li>
-        <li>
-          <h3>Tendencias</h3>
-          <p>Noticias</p>
-          <p>Novedades</p>
-          <p>Catálogos</p>
-          <p>Certificados</p>
-        </li>
-        <li>
-          <h3>Siguenos</h3>
-          <div>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
-        </li>
-      </ul>
+      <p class="linea"><strong>LÍNEAS</strong></p>
+    </div>
+    <div class="img-line1">
+      <div>
+        <img src="imagenes/img-line1.jpg" alt="img-denim" />
+        <p><strong>DENIM</strong></p>
+      </div>
+      <div>
+        <img src="imagenes/img-line2.jpg" alt="img-modahombre" />
+        <p><strong>MODA HOMBRE</strong></p>
+      </div>
+      <div>
+        <img src="imagenes/img-line3.jpg" alt="img-industrial" />
+        <p><strong>INDUSTRIAL</strong></p>
+      </div>
+      <div>
+        <img src="imagenes/img-line4.jpg" alt="img-modamujer" />
+        <p><strong>MODA MUJER</strong></p>
+      </div>
     </div>
   </body>
 </html>
