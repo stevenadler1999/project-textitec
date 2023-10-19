@@ -1,0 +1,10 @@
+.img-banner-contact {
+  height: 505px;
+  display: flex;
+}
+.text-contact {
+  margin-left: 10%;
+}
+.text {
+  font-size: 40px;
+}
