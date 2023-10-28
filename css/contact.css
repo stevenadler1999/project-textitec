@@ -3,8 +3,19 @@
   display: flex;
 }
 .text-contact {
-  margin-left: 10%;
+  text-align: center;
 }
-.text {
+h1 {
   font-size: 40px;
+}
+.form-register {
+  width: 250px;
+  background: #081644;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-bottom: 7%;
 }

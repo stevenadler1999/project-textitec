@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/empresa.css" />
+    <link rel="shortcut icon" href="./images/icon.jpg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/39d0c74bc8.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>TEXTITEC</title>
     <link
       rel="stylesheet"
@@ -16,10 +22,10 @@
     />
   </head>
   <body>
+    <!-- inicio de la cabecera -->
     <header>
-      <!-- inicio de la cabecera -->
       <div class="logo">
-        <a href="#"
+        <a href="./index.html"
           ><img
             src="./images/logo.jpg"
             alt="logo de la compañia"
@@ -28,20 +34,31 @@
       </div>
       <div class="menu-list">
         <ul>
-          <li><a href="index.html" class="nav-link">INICIO</a></li>
-          <li><a href="empresa.html" class="nav-link">EMPRESA</a></li>
-          <li><a href="#" class="nav-link">LÍNEAS</a></li>
-          <li><a href="#" class="nav-link">NOVEDADES</a></li>
-          <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+          <li><a href="./index.html" class="nav-link">INICIO</a></li>
+          <li><a href="./empresa.html" class="nav-link">EMPRESA</a></li>
+          <li>
+            <a href="./lineas.html" class="nav-link">LÍNEAS</a>
+            <ul class="dropdown">
+              <li><a href="./lineas.html#denim">DENIM</a></li>
+              <li><a href="./lineas.html#modahombre">MODA HOMBRE</a></li>
+              <li><a href="./lineas.html#industrial">INDUSTRIAL</a></li>
+              <li><a href="./lineas.html#modamujer">MODA MUJER</a></li>
+            </ul>
+          </li>
+          <li><a href="./novedades.html" class="nav-link">NOVEDADES</a></li>
+          <li><a href="./contacto.html" class="nav-link">CONTACTO</a></li>
         </ul>
       </div>
     </header>
     <!-- Fin de la cabecera -->
 
-    <div class="video-wrapper">
-      <video autoplay muted loop class="video">
-        <source src="videos/vid-carrusel-2.mp4" type="video/mp4" />
-      </video>
+    <div class="CARRUSEL">
+      <ul>
+        <li><img src="./images/IMAGEN1.png" alt="" /></li>
+        <li><img src="./images/IMAGEN2.png" alt="" /></li>
+        <li><img src="./images/IMAGEN3.png" alt="" /></li>
+        <li><img src="./images/IMAGEN4.png" alt="" /></li>
+      </ul>
     </div>
 
     <div class="conten-nosotros">
@@ -49,10 +66,13 @@
       <img src="images/img-1.jpg" alt="imagen1" class="img-description" />
       <h3 class="title-nos">NOSOTROS</h3>
       <p class="content-nos">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-        temporibus aperiam numquam ipsa, ullam a doloremque aut quas ex quo
-        atque, sit assumenda porro nobis dolorum alias, quisquam tempore
-        reiciendis?
+        En Colortex, estamos orgullosos de estar a la vanguardia de la industria
+        textil en Perú desde hace 20 años.<br />
+        <br />Somos conscientes de la responsabilidad que implica liderar el
+        mercado de importación y distribución de telas bajo la premisa del
+        crecimiento sostenible de la industria peruana de la moda.<br />
+        <br />Somos parte de la historia reciente de nuestro país, trabajamos
+        fuertemente en el presente y estamos dispuestos a apostar por el futuro.
       </p>
     </div>
     <!-- Fin del contenido de nosotros -->
@@ -107,12 +127,9 @@
         </li>
         <li>
           <a href="#">Líneas</a>
-          <a href="#">Crudos</a>
           <a href="#">Moda Mujer</a>
           <a href="#">Moda Hombre</a>
-          <a href="#">Sportech</a>
           <a href="#">Industrial</a>
-          <a href="#">Institucional</a>
         </li>
         <li>
           <a href="#">Tendencias</a>
@@ -124,7 +141,7 @@
         <li><a href="#">Siguenos</a></li>
       </ul>
     </div>
-    <div class="flotter">
+    <div class="footer">
       <p>TEXTITEC GROUP</p>
     </div>
   </body>

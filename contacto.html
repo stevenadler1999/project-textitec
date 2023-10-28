@@ -6,12 +6,13 @@
     <title>TEXTITEC</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="shortcut icon" href="./images/icon.jpg" type="image/x-icon" />
   </head>
   <body>
     <header>
       <!-- inicio de la cabecera -->
       <div class="logo">
-        <a href="#"
+        <a href="./index.html"
           ><img
             src="./images/logo.jpg"
             alt="logo de la compañia"
@@ -22,46 +23,130 @@
         <ul>
           <li><a href="index.html" class="nav-link">INICIO</a></li>
           <li><a href="empresa.html" class="nav-link">EMPRESA</a></li>
-          <li><a href="#" class="nav-link">LÍNEAS</a></li>
-          <li><a href="#" class="nav-link">NOVEDADES</a></li>
+          <li>
+            <a href="./lineas.html" class="nav-link">LÍNEAS</a>
+            <ul class="dropdown">
+              <li><a href="./lineas.html#denim">DENIM</a></li>
+              <li><a href="./lineas.html#modahombre">MODA HOMBRE</a></li>
+              <li><a href="./lineas.html#industrial">INDUSTRIAL</a></li>
+              <li><a href="./lineas.html#modamujer">MODA MUJER</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./novedades.html" class="nav-link">NOVEDADES</a></li>
           <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
         </ul>
       </div>
     </header>
     <!-- Fin de la cabecera -->
+
     <div class="img-banner-contact">
-      <img src="images/contact-banner.jpg" alt="img-banner-contact" />
-    </div>
-    <div class="text-contact">
-      <h1 class="text">ENVIANOS UN MENSAJE</h1>
+      <img
+        id="contacto"
+        src="images/contact-banner.jpg"
+        alt="img-banner-contact"
+      />
     </div>
 
     <div>
-      <form action="">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" />
-            <input type="submit" value="save" />
-          </li>
-          <li>
-            <label for="last-name">Apellido</label>
-            <input id="last-name" type="text" last-name="apellido" />
-          </li>
-          <li>
-            <label for="celphone">Celular</label>
-            <input id="celphone" type="number" celphone="celular" />
-          </li>
-          <li>
-            <label for="email">correo</label>
-            <input id="email" type="text" last-name="apellido" />
-          </li>
-          <li>
-            <label for="country">País</label>
-            <input id="country" type="text" pais="pais" />
-          </li>
-        </ul>
-      </form>
+      <section>
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+          <summary>¿Que tipo de tela es la que vendemos?</summary>
+          <p>
+            Tenemos 4 tipos de tela, Denim, Moda hombre, Industrial y Moda
+            Mujer.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Realizas Entregas a Nivel Nacional?</summary>
+          <p>
+            Claro que si, tenemos diferentes puntos en todas las provincias a
+            nivel Nacional?
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cuanta con stock?</summary>
+          <p>
+            Claro que si contamos con stock de cualquiera de nuestras telas,
+            hacer la consulta antes por nuestro formulario de contacto
+          </p>
+        </details>
+      </section>
+      <div class="text-contact">
+        <h1>ENVIANOS UN MENSAJE</h1>
+      </div>
+      <main>
+        <section class="form-register">
+          <form method="post" action="">
+            <fieldset>
+              <legend><strong>FORMULARIO DE CONTACTO</strong></legend>
+              <div>
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="sergio daniel"
+                />
+              </div>
+              <div>
+                <label for="last-name">Apellido</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  last-name="last-name"
+                  placeholder="lizano inga"
+                />
+              </div>
+              <div>
+                <label for="celphone">Celular</label>
+                <input
+                  type="number"
+                  id="celphone"
+                  celphone="celphone"
+                  placeholder="961005331"
+                />
+              </div>
+              <div>
+                <label for="email">correo</label>
+                <input
+                  type="text"
+                  id="email"
+                  last-name="email"
+                  placeholder="ingasergio99@gmail.com"
+                />
+              </div>
+              <div>
+                <label for="country">País</label>
+                <input
+                  type="text"
+                  id="country"
+                  pais="country"
+                  placeholder="Perú"
+                />
+              </div>
+
+              <div>
+                <datalist id="lineas">
+                  <option value="DENIM"></option>
+                  <option value="MODA HOMBRE"></option>
+                  <option value="INDUSTRIAL"></option>
+                  <option value="MODA MUJER"></option>
+                </datalist>
+                <label>
+                  Consulta por:
+                  <input list="lineas" name="lineas" />
+                </label>
+              </div>
+
+              <button type="submit" href="#contacto">ENVIAR</button>
+            </fieldset>
+          </form>
+        </section>
+      </main>
     </div>
 
     <div>
@@ -86,12 +171,9 @@
         </li>
         <li>
           <a href="#">Líneas</a>
-          <a href="#">Crudos</a>
           <a href="#">Moda Mujer</a>
           <a href="#">Moda Hombre</a>
-          <a href="#">Sportech</a>
           <a href="#">Industrial</a>
-          <a href="#">Institucional</a>
         </li>
         <li>
           <a href="#">Tendencias</a>
@@ -103,7 +185,7 @@
         <li><a href="#">Siguenos</a></li>
       </ul>
     </div>
-    <div class="flotter">
+    <div class="footer">
       <p>TEXTITEC GROUP</p>
     </div>
   </body>
